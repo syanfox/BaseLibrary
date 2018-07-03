@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_toolbar"
+    style="@style/Toolbar"
+    android:background="@color/colorPrimary"
+    app:navigationIcon="@mipmap/nav_icon_back"
+    app:popupTheme="@style/Toolbar_Popup"
+    app:theme="@style/ThemeOverlay.AppCompat.Light">
+
+    <TextView
+        android:id="@+id/app_toolbar_title"
+        style="@style/toolbarTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SecondActivity"/>
+
+    <RelativeLayout
+        android:id="@+id/app_toolbar_right_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/dp_13"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/app_toolbar_right"
+            style="@style/toolbarTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/selector_head_setting"/>
+
+        <TextView
+            android:id="@+id/app_toolbar_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新增"
+            android:textColor="@color/selector_header_text"
+            android:textSize="@dimen/font_size_15"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

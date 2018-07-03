@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_10"
+    android:paddingBottom="@dimen/dp_10"
+    android:background="@drawable/bg_item">
+
+
+    <ImageView
+        android:id="@+id/popup_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/screen_icon_selected"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/popup_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试"
+        android:textSize="@dimen/font_size_14"
+        android:textColor="@color/color_333333"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginLeft="@dimen/dp_46"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:id="@+id/popup_middleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试"
+        android:textSize="@dimen/font_size_14"
+        android:textColor="@color/color_333333"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_toRightOf="@+id/popup_item"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_centerVertical="true"/>
+
+
+</RelativeLayout>
